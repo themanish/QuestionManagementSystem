@@ -78,7 +78,7 @@
             ?>
             <form method="post" action="execute.php">
             	<input type="hidden" name="edit_subjective">
-            	<input type="hidden" name="qsn_id" value="<?php print($_GET['qsn_id']); ?>>"
+            	<input type="hidden" name="qsn_id" value="<?php echo $_GET['qsn_id']; ?>">
             	<label>Question</label>
             	<textarea name="question" id="sub-qsn" required><?php print($result[4]);?></textarea>
             	
