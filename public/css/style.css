@@ -1,0 +1,128 @@
+@import 'normalize.css' screen;
+@import 'grid.css' screen;
+@import 'menu.css' screen;
+@import 'form.css' screen;
+
+html, body, div, p {margin: 0; padding: 0; border: 0;}
+a, a:visited {color: #21759B; text-decoration:none; outline: none;}
+a:hover {color: #2fa1d4;}
+p {font-size: 14px; line-height: 20px; margin-bottom: 10px;}
+.left {float: left;}
+.right {float: right;}
+.center {text-align: center;}
+.clear {clear:both;}
+
+.alert-error-box {
+    background-color: #F2DEDE;
+    border: 1px solid #EED3D7;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    color: #B94A48;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+}
+
+
+/* COLORS */
+
+.green-text {color: green}
+.red-text {color: red}
+
+/* Main Layout */
+
+body { background: #F5F5F5;}
+#dashboard { margin-left:0; margin-right:0;	min-width:940px; width:100%;}
+
+/* Login Page */
+
+body#login {background-color: #212025;}
+#login-page {margin:0 auto; width: 100%;}
+#login-header {	height: 100px; background-color: #283B59;}
+#login-footer {	background-color: #212025; height: 75px;}
+#login-footer p {text-align: center; padding-top: 10px; color: #ccc;}
+#login-row { background: #F5F5F5; padding-bottom: 20px; padding-top: 10px;}
+#login-row .span4 { margin-left: auto; margin-right: auto; float: none;}
+#login-box { border: 1px solid #999; padding: 15px 39px;}
+#login-logo { height: 104px; background:#FFF url(../img/qms-login.jpg) no-repeat;}
+
+/* Admin CSS */
+
+#add-edit-chapters label { width: 50px; display: inline-block; text-align: center; letter-spacing: 1px;}
+
+/* Dashboard Common */
+
+.span9 {position:relative; top: 125px; z-index: 1;}
+.span9 p span.tHead {width: 100px; font-weight: bold; margin-right: 10px; display: inline-block;}
+#dash-header { position: fixed;	min-width: 960px; width: 100%; background-color: #283B59; margin:0; z-index: 2;}
+#dash-header .span4 #dash-logo-box { padding: 10px 5px;}
+#dash-header .span4 #dash-logo-box #dash-logo {	height: 104px;}
+#dash-header .span4 #user-dash-logged-in { display: block; padding: 10px 25px 10px; width: 100%;}
+#dash-header .span4 #user-dash-logged-in #user-dash-image img {	padding: 2px; background-color: #f2f2f2; border:1px solid #fff; width: 100px; height: 100px;}\
+#dash-header .span4 #user-dash-logged-in #user-dash-info { display: block; margin-right: 10px; text-align: right; width: 180px;	color: #21759B;}
+#dash-header .span4 #user-dash-logged-in #user-dash-info span { display: block; }
+#dash-header .span4 #user-dash-logged-in #user-dash-info span#edit { font-size: 12px; margin-bottom: 13px; margin-top: 5px;}
+#dash-header .span4 #user-dash-logged-in #user-dash-info span#user-name { font-size: 24px; font-weight: normal; color: #e5e5e5; margin-top: 20px;}
+
+#dash-vertical-menu { position: fixed; top: 125px; border-right: 2px solid #999; height: 100%; background-color:#212025;}
+
+#modal { position: absolute; border: 5px solid gray; padding: 10px; background: white; width: 270px; height: auto;}
+
+.dialogIsOpen .container {
+        -webkit-filter: blur(3px);
+        /* for Firefox 22+ */
+        filter: url(commonfilters.xml#large-blur);
+}
+
+/* Admin HomePage */
+#quick-links { float: inherit;}
+#quick-links .box {width: 220px; height: 100px; float: left; margin-left: 13px;}
+#quick-links .box img { width: 100px; height: 100px; margin-right: 5px; float: left;}
+#quick-links .box ul { margin: 10px 0 0; padding-left: 20px; width: 95px; float: right;}
+#quick-links .box ul li { font-size: 13px; margin: 5px 0; list-style-image: url('../img/qms-ul-li.png');}
+
+/* ADD QUESTION COMMON */
+#add-qsn-final-req {margin-top: 20px;}
+#add-qsn-final-req select[name='subject']{ width: 215px;}
+#add-qsn-final-req select[name='unit']{ width: 250px; }
+#add-qsn-final-req select[name='level']{ width: 90px; }
+
+/* Add New Subjective */
+textarea#sub-qsn {width: 685px;	min-height: 60px; font-weight: bold;}
+textarea#sub-ans{ min-height: 240px;}
+
+/* Add New Objective */
+
+#obj-qsn-box {border: 2px groove #ccc; padding: 10px; margin-bottom: 10px;}
+#obj-qsn-box table, #obj-ans-box table {padding: 0; border: none;}
+#obj-qsn-box table tr:hover, #obj-ans-box table tr:hover {background: none;} 
+#obj-qsn-box table tr td, #obj-ans-box table tr td {padding: 0; border:none;}
+#obj-qsn-box table tr td textarea.mainStmt {	width: 662px; height: 40px; max-width: 662px;}
+#obj-qsn-box table tr td textarea.miniStmt { width: 595px; height: 20px; }
+#obj-qsn-box table tr td textarea#block-text { width: 662px; height: 120px; max-width: 662px; }
+#obj-qsn-box table tr td a.addStmt { margin-bottom: 10px; float: right; height: 20px;}
+#obj-qsn-box table tr[id*="Row"] td textarea {width: 270px; max-width: 270px;}
+#obj-ans-box table tr td input { width: 305px; }
+
+
+/* Generate Exam Papers */
+#exampaper-table table tr th table tr th {padding: 2px; border: 1px solid #CCCCCC;}
+#exampaper-table table tr td table {border:0;}
+#exampaper-table table tr td table tr td {padding: 0; border:0;}
+#exampaper-table input {width: 20px; margin: 0 auto;}
+#recent-appearance {width: 250px; margin: 0 auto;}
+#recent-appearance table tr td {width: 100px;}
+#recent-appearance table tr td input{width: 50px}
+
+#generate-mode { width: 698px; height: 40px; border: 1px solid #ccc; clear: both; background: #fff;}
+#generate-mode a { padding: 9px 141px; float: left; font-size: 17px; }
+#generate-mode-subject {margin: 10px 0;}
+#generate-mode-subject select {margin-bottom: 0;}
+#generate-mode-subject select[name="subject"] {width: 325px;}
+#generate-mode-subject select[name="exam-type"] {width: 150px;}
+#generate-mode-subject select[name="session"] {width: 140px;}
+#generate-mode-subject input[name="year"] {width: 55px; margin-bottom: 0;}
+
+/* EXAM POPUP */
+#search-box { padding: 10px;}
+#search-box input[type='text']{ width:380px;}
+

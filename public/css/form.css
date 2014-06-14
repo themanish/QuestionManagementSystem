@@ -1,0 +1,151 @@
+form {
+  margin: 0 0 10px;
+  font: normal 14px sans-serif;
+  line-height: 20px;
+}
+form p:after, form p:before {
+	clear: both;
+}
+form p {
+	display: block;
+	clear: both;
+	margin-bottom: 2px;
+}
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+input, textarea { 
+  width: 206px; 
+}
+select { 
+  width: 220px;
+}
+textarea { 
+  height: auto;
+}
+select,
+textarea,
+input {
+  display: inline-block;
+  height: 20px;  min-height: 20px;
+  padding: 4px 6px;
+  margin-bottom: 10px;
+  line-height: 20px;
+  vertical-align: middle;
+  background-color: #fff;
+  color: #555;
+  border: 1px solid #ccc;
+}
+label {
+  line-height: 20px;
+  width:auto;
+  display:block;
+}
+.ver-label {
+  display: block;
+  margin-bottom: 5px;
+}
+.hor-label {
+  margin-bottom: 5px;
+  margin-right: 5px;
+  float:left;
+}
+.rad-ckbx {
+	padding-left: 20px;
+}
+.rad-ckbx input {
+	margin-left: -20px;
+  	margin-bottom: 5px;
+}
+textarea:focus, input:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  outline: 0;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin-bottom: 0;
+  float: left;
+  line-height: normal;
+}
+input[type="file"],
+input[type="image"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+select,
+input[type="file"] {
+  height: 30px;
+}
+.add-on {
+	float:left;
+	margin-right:-1px;
+	background-color: #EEEEEE;
+    border: 1px solid #CCCCCC;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    height: 20px;
+    line-height: 20px;
+    min-width: 16px;
+    padding: 4px 5px;
+    text-align: center;
+    text-shadow: 0 1px 0 #FFFFFF;
+    width: auto;
+	margin-bottom: 10px;
+}
+/* ***** BUTTONS ***** */
+
+.btn {
+  padding: 4px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+  color: #333333;
+  background-color: #f5f5f5;
+  border: 1px solid #cccccc;
+}
+full-btn, input.full-btn {
+	width:100%;
+}
+.btn:hover,
+.btn:focus,
+.btn:active{
+  color: #333333;
+  background-color: #e6e6e6;
+}
+
+/* ICONS */
+[class^="icon-"],
+[class*=" icon-"] {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  *margin-right: .3em;
+  line-height: 14px;
+  vertical-align: text-top;
+  background-image: url("../img/glyphicons-halflings.png");
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+  margin-top: 1px;
+}
+.icon-trash {
+  background-position: -456px 0;
+}
+.icon-pencil {
+  background-position: 0 -72px;
+}
+.icon-file {
+	background-position: -24px -24px;
+}
+.icon-print {
+    background-position: -96px -48px;
+}
