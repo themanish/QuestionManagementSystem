@@ -5,6 +5,7 @@ pipeline {
         stage ('main'){
             steps {
                 sh 'ls -al'
+                echo 'from branch'
             }
         }
     }
